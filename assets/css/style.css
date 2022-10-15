@@ -1,0 +1,214 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 360px;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7740ED;
+    color: aliceblue;
+    padding: 5px 7% 5px 7%;
+    height: 64px;
+    width: 100%;
+}
+
+h1{
+    width: 150px;
+    /* font-family: Inter; */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.notificacao{
+    display: flex;
+}
+
+.notificacao-sino{
+    display: flex;
+    justify-content: center;
+}
+
+.notificacao-marcador{
+    display: flex;
+    justify-content: center;
+    width: 6px;
+    height: 6px;
+    border: 0.5px aliceblue solid;
+    border-radius: 50%;
+    background-color: #ED4B40;
+    margin: 0px 0px 30px 0px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.formulario-bloco{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+
+.formulario-bloco label{
+    /* font-family: Inter; */
+    font-weight: 500;
+    font-size: 12px;
+    padding: 5px 0px 5px 0px;
+}
+
+.formulario-entrada{
+    display: flex;
+    justify-content: space-between;
+    border: 1px #7740ED solid;
+    border-radius: 10px;
+    height: 40px;
+    padding: 0px 10px 0px 10px;
+}
+
+.formulario-entrada input{
+    width: 90%;
+    outline: none;
+    border: 0px;
+}
+
+.formulario-botao{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formulario-botao-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    /* font-family: Inter; */
+    font-weight: 500;
+    font-size: 14px;
+    color: aliceblue;
+    background-color: #7740ED;
+    border-radius: 10px;
+    height: 40px;
+    width: 90%;
+    margin: 20px 0px 20px 0px;
+}
+
+.formulario-botao-link:hover{
+    cursor: pointer;
+    background-color: #5723c7;
+}
+
+
+.bloco{
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    flex-direction: row;
+    width: 90%;
+    background-color: #D9D9D9;
+    border-radius: 10px;
+    height: 64px;
+    padding: 10px;
+    margin: 5px 0px 5px 0px;
+}
+
+.bloco-tarefa{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloco-selecionar{
+    display: flex;
+    flex-direction: row;
+}
+
+.bloco-selecionar label{
+    margin: 0px 0px 0px 15px;
+    /* font-family: Inter; */
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.bloco-selecionar label:hover, .bloco input:hover{
+    cursor: pointer;
+}
+
+.bloco-horario {
+    display: flex;
+    margin: 5px 0px 0px 27px;
+    /* font-family: Inter; */
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.bloco-apagar{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bloco-apagar:hover{
+    cursor: pointer;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.marcador{
+    display: flex;
+    justify-content: left;
+    justify-items: left;
+    align-items: flex-start;
+    width: 90%;
+    height: 32px;
+    margin: 5px 0px 5px 0px;
+    border-radius: 10px;
+    background-color: #D9D9D9;
+}
+
+.contador{
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    width: 50%;
+    height: 32px;
+    border-radius: 10px 0px 0px 10px;
+    background-color: #FFDB21;
+}
+
+.contador-texto{
+    display: flex;
+    flex-wrap: nowrap;
+    width: 360px;
+    height: 15px;
+    font-family: Inter;
+    font-weight: 400px;
+    font-size: 12px;
+    position: absolute;
+    left: 33px;
+    top: 583px;
+}
