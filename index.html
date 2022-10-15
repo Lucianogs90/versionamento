@@ -1,12 +1,115 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Testes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Lista de Tarefas</title>
 </head>
 <body>
-    
+    <header class="header">
+        <h1>Lista de Tarefas</h1>
+        <nav class="notificacao">
+            <img src="assets/images/bell 2.svg" alt="sino" class="notificacao-sino">
+            <div class="notificacao-marcador"></div>
+        </nav>
+    </header>
+
+    <form class="formulario">
+        <div class="formulario-bloco">
+            <label for="tarefa">Tarefa</label>
+            <div class="formulario-entrada">
+                <input type="text" id="tarefa" placeholder="Ex.: comprar leite">
+                <img src="assets/images/tasks 1.svg" alt="ícone de uma lista">
+            </div>
+        </div>
+
+        <div class="formulario-bloco">
+            <label for="data">Data</label>
+            <div class="formulario-entrada">
+                <input type="datetime" id="data" placeholder="10/12/2022">
+                <img src="assets/images/calendar-appointment-date 1.svg" alt="ícone de calendário">
+            </div>
+        </div>
+
+        <div class="formulario-botao">
+            <a href="#" class="formulario-botao-link">Adicionar</a>
+        </div>
+        
+        <div class="bloco">
+            <div class="bloco-tarefa">
+                <div class="bloco-selecionar">
+                    <input type="checkbox" id="selecionar">
+                    <label for="selecionar">Pesquisar sobre React</label>
+                </div>
+                
+                <div class="bloco-horario">
+                    <p>14/08/2022 às 12h00</p>
+                </div>
+            </div>
+            
+            <div class="bloco-apagar">
+                <img src="assets/images/Group.svg" alt="lixeira">
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="bloco-tarefa">
+                <div class="bloco-selecionar">
+                    <input type="checkbox" id="selecionar">
+                    <label for="selecionar">Pagar conta de energia</label>
+                </div>
+                
+                <div class="bloco-horario">
+                    <p>14/08/2022 às 13h30</p>
+                </div>
+            </div>
+            
+            <div class="bloco-apagar">
+                <img src="assets/images/Group.svg" alt="lixeira">
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="bloco-tarefa">
+                <div class="bloco-selecionar">
+                    <input type="checkbox" id="selecionar">
+                    <label for="selecionar" style="text-decoration:line-through">Trabalho de Matemática</label>
+                </div>
+                
+                <div class="bloco-horario">
+                    <p>14/08/2022 às 12h00</p>
+                </div>
+            </div>
+            
+            <div class="bloco-apagar">
+                <img src="assets/images/Group.svg" alt="lixeira">
+            </div>
+        </div>
+
+        <div class="bloco">
+            <div class="bloco-tarefa">
+                <div class="bloco-selecionar">
+                    <input type="checkbox" id="selecionar">
+                    <label for="selecionar" style="text-decoration: line-through">Fazer compras</label>
+                </div>
+                
+                <div class="bloco-horario">
+                    <p>14/08/2022 às 12h00</p>
+                </div>
+            </div>
+            
+            <div class="bloco-apagar">
+                <img src="assets/images/Group.svg" alt="lixeira">
+            </div>
+        </div>
+    </form>
+
+    <div class="container">
+        <div class="marcador">
+            <div class="contador">
+            </div>
+        </div>
+    </div>
+    <p class="contador-texto">2 de 4 tarefas concluídas</p>
 </body>
 </html>
